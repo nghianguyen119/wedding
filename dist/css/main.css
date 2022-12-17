@@ -192,6 +192,39 @@ p {
   margin-bottom: 1rem;
 }
 
+.tree-padding-right {
+  padding-right: 20px;
+}
+
+@media (min-width: 500px) {
+  .tree-padding-right {
+    padding-right: 40px;
+  }
+}
+
+.tree-padding-left {
+  padding-left: 20px;
+}
+
+@media (min-width: 500px) {
+  .tree-padding-left {
+    padding-left: 40px;
+  }
+}
+
+.tree-image-size {
+  max-width: 120px;
+  width: auto;
+}
+
+@media (min-width: 500px) {
+  .tree-image-size {
+    max-width: 150px;
+  }
+}
+
+
+
 abbr[title] {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
