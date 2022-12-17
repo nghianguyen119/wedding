@@ -89,6 +89,38 @@
     });
   };
 
+  $(document).ready(function () {
+    $("#welcome").css("opacity", 0);
+    $("#ceremony").css("opacity", 0);
+    $("#photos").css("opacity", 0);
+    $("#party").css("opacity", 0);
+
+    $("#welcome").waypoint(
+      function () {
+        $("#welcome").addClass("animate__fadeInLeft");
+      },
+      { offset: "85%" }
+    );
+    $("#ceremony").waypoint(
+      function () {
+        $("#ceremony").addClass("animate__fadeInRight");
+      },
+      { offset: "85%" }
+    );
+    $("#photos").waypoint(
+      function () {
+        $("#photos").addClass("animate__fadeInLeft");
+      },
+      { offset: "85%" }
+    );
+    $("#party").waypoint(
+      function () {
+        $("#party").addClass("animate__fadeInRight");
+      },
+      { offset: "85%" }
+    );
+  });
+
   // Content way point
   var contentWayPoint = function () {
     var i = 0;
@@ -231,7 +263,7 @@
       var timeinterval = setInterval(updateClock, 1000);
     }
     // set your wedding date here
-    var deadline = "November 28 2023 17:30:00 GMT+0300";
+    var deadline = "January 15 2023 16:00:00 GMT+0700";
     if (countdown) {
       initializeClock("timer", deadline);
     }
