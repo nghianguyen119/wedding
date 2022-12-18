@@ -1,6 +1,14 @@
 (function () {
   "use strict";
 
+  var startDateNT = new Date("March 30, 2019");
+  var todayNT = new Date();
+  var daysNT = Math.floor(
+    (todayNT.getTime() - startDateNT.getTime()) / (1000 * 3600 * 24)
+  );
+
+  $("#id29").attr("data-to", daysNT.toString());
+
   $(window).on("load", function () {
     $(".loader").delay(600).fadeOut("slow");
     setTimeout(function () {
